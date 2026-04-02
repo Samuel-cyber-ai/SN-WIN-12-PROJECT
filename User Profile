@@ -1,0 +1,56 @@
+"name": "UserProfile",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "password": {
+      "type": "string"
+    },
+    "age": {
+      "type": "number"
+    },
+    "email": {
+      "type": "string"
+    },
+    "taskbar_style": {
+      "type": "string",
+      "enum": [
+        "floating",
+        "normal"
+      ],
+      "default": "normal"
+    },
+    "taskbar_color": {
+      "type": "string",
+      "default": "red"
+    },
+    "background": {
+      "type": "string",
+      "default": "blue"
+    },
+    "cursor_color": {
+      "type": "string",
+      "default": "default"
+    },
+    "lock_style": {
+      "type": "string",
+      "enum": [
+        "normal",
+        "win81",
+        "blue_text"
+      ],
+      "default": "normal"
+    },
+    "setup_complete": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "username",
+    "password",
+    "age",
+    "email"
+  ]
+}vv
