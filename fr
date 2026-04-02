@@ -1,0 +1,35 @@
+import React, { useState, useEffect } from 'react';
+import { Wifi, Volume2, BatteryFull, ChevronUp } from 'lucide-react';
+
+export default function SystemTray() {
+  const [time, setTime] = useState(new Date());
+
+  useEffect(() => {
+    const interval = setInterval(() => setTime(new Date()), 1000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const formatTime = (d) => d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  const formatDate = (d) => d.toLocaleDateString([], { weekday: 'short', month: 'short', day: 'numeric' });
+
+  return null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
